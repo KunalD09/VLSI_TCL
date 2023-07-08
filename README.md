@@ -6,10 +6,10 @@ TCL is widely used in VLSI industry for processing synthesis results, timing rep
 
 **Table of Contents**
 
-1. DAY 1 - Inception of the TCL worksop\n
-   a. VLSI Design flow and application of TCL scripting\n
-   b. Description of the tasks\n
-   c. Introduction to Bash script\n
+1. DAY 1 - Inception of the TCL worksop <br />
+   a. VLSI Design flow and application of TCL scripting <br />
+   b. Description of the tasks <br />
+   c. Introduction to Bash script <br />
 
 # DAY 1 - Inception of the TCL workshop
 
