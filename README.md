@@ -17,49 +17,7 @@ It serves as the foundation of the TCL scripting and the instructor introduced t
 
 The initial task is to create a bash script to accept the argument i.e. csv file, and invoke TCL script that processes the csv file.
 
-**Bash script used for automation:**
-
-#!/bin/tcsh -f
-
-echo "\n"
-echo "##########################################################################"
-echo "######            ##############       #############  ####################"
-echo "###########  #################  ####################  ####################"
-echo "###########  ################  #####################  ####################"
-echo "###########  ###############  ######################  ####################"
-echo "###########  ###############  ######################  ####################"
-echo "###########  ###############  ######################  ####################"
-echo "###########  ################  #####################  ####################"
-echo "###########  ##################  ###################  ####################"
-echo "###########  ###################       #############         #############"
-echo "##########################################################################"
-
-set my_work_dir = 'pwd'
-
-echo "\n\n"
-#-----------------------------------------------------------------------------------------------
-#-------------------------------------- Tool Initialization ------------------------------------
-#-----------------------------------------------------------------------------------------------
-
-if ($#argv != 1) then
-	echo "Info: Please provide the csv file. Exiting..."
-	exit 1
-endif
-
-if (! -f $argv[1] || $argv[1] == "-help") then
-	if ($argv[1] != "-help") then
-		echo "Error: Cannot find the csv file $argv[1]. Exiting..."
-		exit 1
-	else
-		echo "USAGE: ./vsdsynth <filename.csv>"
-		echo "\nProvide the correct csv file that contains the design name, netlist directory, constraints directory, library directory and output directory. Exiting..."	
-		exit 1
-	endif
-else
-	tclsh vsdsynth.tcl $argv[1]
-endif 
-echo "\n"
-
+The bash script is available in the repository for reference.
 
 The bash script covers following scenarios:
 
