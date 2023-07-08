@@ -6,10 +6,10 @@ TCL is widely used in VLSI industry for processing synthesis results, timing rep
 
 **Table of Contents**
 
-1. DAY 1 - Inception of the TCL worksop
-   a. VLSI Design flow and application of TCL scripting
-   b. Description of the tasks
-   c. Introduction to Bash script
+1. DAY 1 - Inception of the TCL worksop\n
+   a. VLSI Design flow and application of TCL scripting\n
+   b. Description of the tasks\n
+   c. Introduction to Bash script\n
 
 # DAY 1 - Inception of the TCL workshop
 
@@ -18,6 +18,7 @@ It serves as the foundation of the TCL scripting and the instructor introduced t
 The initial task is to create a bash script to accept the argument i.e. csv file, and invoke TCL script that processes the csv file.
 
 The bash script covers following scenarios:
+
 a. No argument provided - when argument is not provided the bash script provides information to the user to provide the csv file
 
 ![image](https://github.com/KunalD09/VLSI_TCL/assets/18254670/dd7073fa-f15e-441d-8e3a-a8b7f1a40179)
