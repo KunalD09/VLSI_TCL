@@ -2,7 +2,7 @@
 TCL Workshop: From Introduction to Advanced Scripting Techniques in VLSI
 
 **Introduction:**
-TCL is widely used in VLSI industry for processing synthesis results, timing reports, automate the physical design flow such as floorplan, placement, and routing. All the EDA tools used in the VLSI industry are based on TCL and therefore, TCL scripting play a significant role in automating these processes that aides in improving the efficiency of the chip design flow, and quality of results. Therefore, TCL helps VLSI engineers to enhance productivity, increase efficiency, and automate the work flows.
+TCL is widely used in VLSI industry for processing synthesis results, timing reports, automate the physical design flow such as floorplan, placement, and routing. All the EDA tools used in the VLSI industry are based on TCL and therefore, TCL scripting play a significant role in automating these processes that aides in improving the efficiency of the chip design flow, and the quality of results. Therefore, TCL helps VLSI engineers to enhance productivity, increase efficiency, and automate the work flows.
 
 **Table of Contents**
 
