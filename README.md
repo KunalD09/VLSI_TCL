@@ -115,8 +115,13 @@ The synthesis completed successfully and generated the netlist openMSP430.synth.
 ![image](https://github.com/KunalD09/VLSI_TCL/assets/18254670/704ed5a5-3d7c-4011-93ad-491e1d376e72)
 
 Since the Yosys and OpenTimer tool are not inter-related, so OpenTimer require a different format to read the netlist
-1. Yosys dumps lines that contains '*' (asterik symbol) which is not understood by OpenTimer tool
-2. In the netlist, there are many signals which will have a "\" (backslash) which is again not interpreted by OpenTimer tool.
+1. Yosys dumps lines that contains '*' (asterik symbol) which is not understood by OpenTimer tool. As shown in the image below, lines 3 and 4 contain '*' (asterik) which is redundant and not interpreted by Opentimer tool.
+
+![image](https://github.com/KunalD09/VLSI_TCL/assets/18254670/11934b21-442d-4c50-b1f1-11b6c7a3928f)
+
+2. In the netlist, there are many signals which will have a "\" (backslash) which is again not interpreted by OpenTimer tool. As shown in the image below, the line no. 5769 contain a signal name with '\' (backslash).
+
+![image](https://github.com/KunalD09/VLSI_TCL/assets/18254670/6bf90eb7-e48a-4b0a-9aff-1fcd512f695c)
 
 So, it is mandatory to edit the netlist before forwarding it to Opentimer.
 
@@ -124,7 +129,7 @@ Following command is used to edit the netlist:
 1. exec grep -v -w "*" $outputdirectory/$designname.synth.v - this command removes redundant lines that contains * (asterik) symbol.
 2. string map {"\\" ""} $line - this command is used for removing the '\' (backslash) from the signal names.
 
-Now the final netlist can be used to run STA using OpenTimer tool.
+Now the final modified netlist can be used to run STA using OpenTimer tool.
 
 **Task 2: Converting Synthesis .sdc constraints to Opentimer .timing constraints**
 
@@ -155,19 +160,3 @@ The QOR report generated after post-processing is given below
 # Conclusion
 
 The task to generate the synthesis and STA run_script has been achieved successfully. The TCL toolbox successfully processes the csv file to generate the sdc constraints and run synthesis and STA to produce the quality of results.  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
