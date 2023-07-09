@@ -102,7 +102,11 @@ The task here is to generate synthesis run_script using TCL, convert the SDC con
 
 **Task 1: Synthesis run_script generation**
 
-In Task 1, the synthesis run_script (openMSP430.ys) is created using TCL. The synthesis run_command is executed on terminal as shown in the image below. Below is the snapshot of the run_script
+In Task 1, the synthesis run_script (openMSP430.ys) is created using TCL. The synthesis run_command is executed on terminal as shown in the image below.
+
+**exec yosys -s $outputdirectory/$designname.ys >& $outputdirectory/$designname.synthesis.log**
+
+Below is the snapshot of the run_script
 
 ![image](https://github.com/KunalD09/VLSI_TCL/assets/18254670/c2df1c88-7a8d-4638-894f-d035a415d8be)
 
